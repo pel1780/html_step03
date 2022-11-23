@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 웹 과제</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .bg {
+            position: relative;
+            height: 100vh;
+            background: url(./img/m01.jpg) no-repeat center center/cover;
+        }
+
+        .mopen {
+            display: none;
+        }
+
+        @media(max-width: 768px) {
+            .mopen {
+                position: fixed;
+                top: 30px;
+                right: 30px;
+                font-size: 40px;
+                display: block;
+                background: inherit;
+                border: inherit;
+            }
+        }
+
+        section .main {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        section .main h2 {
+            font-size: 5vw;
+            text-align: center;
+        }
+
+        section .main p {
+            font-size: 3vw;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="bg"></div>
+        <button class="mopen">
+            <i class="xi-bars"></i>
+        </button>
+        <div class="main">
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, voluptates consequatur rem eum pariatur
+                blanditiis maiores temporibus magnam.</p>
+        </div>
+    </section>
+</body>
+
+</html>
